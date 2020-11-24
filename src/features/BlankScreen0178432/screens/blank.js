@@ -25,7 +25,17 @@ export default class Blank extends React.Component {
 
   state = {}
 
-  render = () => <View style={styles.View_1} />
+  render = () => (
+    <ImageBackground
+      source={{
+        uri:
+          "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/img-20190608-160706-516-edited_orig.jpeg"
+      }}
+      style={styles.ImageBackground_1}
+    >
+      <View />
+    </ImageBackground>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -33,5 +43,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
-  View_1: { fontFamily: "Roboto-Regular" }
+
+  View_1: { fontFamily: "Roboto-Regular" },
+  ImageBackground_1: { fontFamily: "Roboto-Regular" },
+  View_3: {}
 })
