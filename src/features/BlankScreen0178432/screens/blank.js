@@ -27,9 +27,7 @@ export default class Blank extends React.Component {
 
   render = () => (
     <ImageBackground style={styles.ImageBackground_1}>
-      <View />
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Image source={{ uri: "https://via.placeholder.com/150" }} />
     </ImageBackground>
   )
 }
@@ -58,7 +56,15 @@ const styles = StyleSheet.create({
     borderStyle: "dotted",
     backgroundSize: "contain"
   },
+
   View_3: {},
   Button_131: {},
-  Button_134: {}
+  Button_134: {},
+  ImageBackground_1: {
+    fontFamily: "Roboto-Regular",
+    alignContent: "center",
+    borderStyle: "dotted",
+    backgroundSize: "contain"
+  },
+  Image_4: {}
 })
