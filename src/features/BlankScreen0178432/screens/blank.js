@@ -26,14 +26,10 @@ export default class Blank extends React.Component {
   state = {}
 
   render = () => (
-    <ImageBackground
-      source={{
-        uri:
-          "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/img-20190608-160706-516-edited_orig.jpeg"
-      }}
-      style={styles.ImageBackground_1}
-    >
+    <ImageBackground style={styles.ImageBackground_1}>
       <View />
+      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Button title="Press me!" onPress={() => alert("Pressed!")} />
     </ImageBackground>
   )
 }
@@ -46,5 +42,13 @@ const styles = StyleSheet.create({
 
   View_1: { fontFamily: "Roboto-Regular" },
   ImageBackground_1: { fontFamily: "Roboto-Regular" },
-  View_3: {}
+  View_3: {},
+  ImageBackground_1: {
+    fontFamily: "Roboto-Regular",
+    alignContent: "center",
+    borderStyle: "dotted"
+  },
+  View_3: {},
+  Button_131: {},
+  Button_134: {}
 })
