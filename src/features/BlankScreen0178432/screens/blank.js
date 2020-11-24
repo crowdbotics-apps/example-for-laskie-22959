@@ -48,6 +48,16 @@ const styles = StyleSheet.create({
     alignContent: "center",
     borderStyle: "dotted"
   },
+
+  View_3: {},
+  Button_131: {},
+  Button_134: {},
+  ImageBackground_1: {
+    fontFamily: "Roboto-Regular",
+    alignContent: "center",
+    borderStyle: "dotted",
+    backgroundSize: "contain"
+  },
   View_3: {},
   Button_131: {},
   Button_134: {}
